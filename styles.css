@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave&display=swap');
 
 * {
     padding: 0;
@@ -10,15 +11,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: #8f8f8f; */    
+    /* background-color: #8f8f8f; */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-img{
+#bg {
     background-image: url(snakes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-     filter: blur(8px);
-    -webkit-filter: blur(8px); 
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 h1 {
@@ -35,29 +38,70 @@ h1 {
     border: 3px solid #000;
     position: absolute;
     bottom: 25px;
-    display: grid;
-    grid-template-columns: repeat(40,20px);
-    grid-template-rows: repeat(40,20px);
-    background-color: rgba(0,0,0, 0.4);
-   
-    
+    /* display: grid;
+    grid-template-columns: repeat(40, 20px);
+    grid-template-rows: repeat(40, 20px); */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .snake {
     width: 20px;
     height: 20px;
-    background-color: rgb(0, 229, 255);
+    background-color: rgb(37, 90, 214);
     position: absolute;
 }
 
-.food {
+/* .food {
     width: 20px;
     height: 20px;
     background-color: rgb(255, 0, 111);
     position: absolute;
+} */
+
+.score {
+    position: absolute;
+    right: 150px;
+    font-size: 35px;
+    font-family: 'Mohave', sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 1px white solid; */
 }
 
-footer{
+.scorecard {
+    position: absolute;
+    right: 180px;
+    top: 422px;
+    font-size: 35px;
+    font-family: 'Mohave', sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 1px white solid; */
+}
+
+#play {
+    /* background-image: url(play.png); */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right: 400px;
+    top: 200px;
+    cursor: pointer;
+
+}
+
+#reset {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    right: 350px;
+    top: 200px;
+    cursor: pointer;
+}
+
+footer {
     position: absolute;
     bottom: 2px;
+    /* background-color: rgba(175, 41, 41, 0.4); */
+    /* width: 90%; */
+    text-align: center;
+    align-items: center;
 }
