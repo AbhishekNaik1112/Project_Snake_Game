@@ -23,14 +23,14 @@ let score = 0;
 // Game interval ID
 let gameInterval;
 
-// document.addEventListener('keydown', function(event) {
-//     if (event.key === 'ArrowUp') {
+// document.addEventListener('keydown', function(press) {
+//     if (press.key === 'ArrowUp') {
 //       console.log('u');
-//     } else if (event.key === 'ArrowDown') {
+//     } else if (press.key === 'ArrowDown') {
 //       console.log('d');
-//     } else if (event.key === 'ArrowLeft') {
+//     } else if (press.key === 'ArrowLeft') {
 //       console.log('l');
-//     } else if (event.key === 'ArrowRight') {
+//     } else if (press.key === 'ArrowRight') {
 //       console.log('r');
 //     }
 //   });
@@ -54,7 +54,7 @@ function updateGame() {
   if (snakeX < 0 || snakeX >= gridWidth || snakeY < 0 || snakeY >= gridHeight) {
     clearInterval(gameInterval);
     // alert();
-    swal("Game over! Your score: " + score);
+    swal("Game over! Your score is: " + score);
     return;
   }
 
