@@ -23,6 +23,18 @@ let score = 0;
 // Game interval ID
 let gameInterval;
 
+// document.addEventListener('keydown', function(event) {
+//     if (event.key === 'ArrowUp') {
+//       console.log('u');
+//     } else if (event.key === 'ArrowDown') {
+//       console.log('d');
+//     } else if (event.key === 'ArrowLeft') {
+//       console.log('l');
+//     } else if (event.key === 'ArrowRight') {
+//       console.log('r');
+//     }
+//   });
+  
 // Directional update
 function updateGame() {
   // Move the snake
