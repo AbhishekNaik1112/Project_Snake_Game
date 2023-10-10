@@ -12,21 +12,21 @@ const foodElement = document.querySelector(".food");
 let snakeX = 10;
 let snakeY = 10;
 let snakeDirection = "down";
-console.log(snakeX);
-console.log(snakeY);
+// console.log(snakeX);
+// console.log(snakeY);
 
 
 // speed changes
 let initialSpeed = 500;
 let speed = initialSpeed;
-console.log(speed);
+// console.log(speed);
 
 
 // food posi
 let foodX = 0;
 let foodY = 0;
-console.log(foodX);
-console.log(foodY);
+// console.log(foodX);
+// console.log(foodY);
 
 
 // score
@@ -36,7 +36,7 @@ let score = 0;
 let snakeBody = [];
 let gameInterval = 2000;
 let snakeLength = 1;
-console.log(gameInterval);
+// console.log(gameInterval);
 
 
 // random food gen
@@ -44,8 +44,8 @@ function generateRandomFoodPosition() {
   foodX = Math.floor(Math.random() * gridWidth);
   foodY = Math.floor(Math.random() * gridHeight);
 }
-console.log(foodX);
-console.log(foodY);
+// console.log(foodX);
+// console.log(foodY);
 
 
 // random food posi gen
@@ -96,7 +96,7 @@ function updateGame() {
     clearInterval(gameInterval); // Clear the old interval
     gameInterval = setInterval(updateGame, speed); // Start a new interval with the updated speed
   }
-  console.log(speed)
+  // console.log(speed)
   console.log(snakeLength)
 
   if (
@@ -141,7 +141,7 @@ document.addEventListener("keydown", (event) => {
     snakeDirection = "down";
   }
 });
-console.log(snakeDirection)
+// console.log(snakeDirection)
 
 // play btn
 playButton.addEventListener("click", () => {
@@ -171,10 +171,10 @@ resetButton.addEventListener("click", () => {
   foodElement.style.left = foodX * cellSize + "px";
   foodElement.style.top = foodY * cellSize + "px";
 });
-console.log(snakeX);
-console.log(snakeY);
-console.log(snakeDirection);
-console.log(score);
-console.log(snakeLength);
+// console.log(snakeX);
+// console.log(snakeY);
+// console.log(snakeDirection);
+// console.log(score);
+// console.log(snakeLength);
 
 resetButton.click();
