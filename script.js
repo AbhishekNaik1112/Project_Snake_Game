@@ -75,6 +75,7 @@ function updateGame() {
   // Wall crashes
   if (snakeX < 0 || snakeX >= gridWidth || snakeY < 0 || snakeY >= gridHeight) {
     clearInterval(gameInterval);
+    speed = 350;
     swal("Game over! Your score is: " + score);
     return;
   }
