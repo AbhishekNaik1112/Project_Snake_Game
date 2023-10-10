@@ -49,14 +49,15 @@ h1 {
     height: 20px;
     background-color: rgb(37, 90, 214);
     position: absolute;
-}
+    }
 
-/* .food {
+.food {
     width: 20px;
     height: 20px;
     background-color: rgb(255, 0, 111);
     position: absolute;
-} */
+    border-radius: 50%;
+}
 
 .score {
     position: absolute;
@@ -105,3 +106,7 @@ footer {
     text-align: center;
     align-items: center;
 }
+
+
+/*responsiveness*/
+
