@@ -49,19 +49,30 @@ h1 {
     height: 20px;
     background-color: rgb(37, 90, 214);
     position: absolute;
-    }
+    border-radius: 50%;
+}
 
-.food {
+.snake-segment {
     width: 20px;
     height: 20px;
-    background-color: rgb(255, 0, 111);
+    background-color: rgb(37, 90, 214); //div created from js
     position: absolute;
     border-radius: 50%;
 }
 
+.food {
+    /* width: 20px;
+    height: 20px; */
+    /* background-color: rgb(255, 0, 111); */
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 20px solid red;
+    border-bottom: 10px solid transparent;
+}
+
 .score {
     position: absolute;
-    right: 150px;
+    right: 147px;
     font-size: 35px;
     font-family: 'Mohave', sans-serif;
     background-color: rgba(0, 0, 0, 0.1);
@@ -108,5 +119,69 @@ footer {
 }
 
 
-/*responsiveness*/
+/* responsiveness 768px */
 
+/* @media screen and (max-width: 768px) {
+
+    .bounds {
+        width: 500px;
+        height: 500px;
+        border: 3px solid #000;
+        position: absolute;
+        bottom: 40px;
+        left: 25px; */
+        /* display: grid;
+        grid-template-columns: repeat(40, 20px);
+        grid-template-rows: repeat(40, 20px); */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+    /* } */
+
+    /* .score { */
+        /* position: absolute; */
+        /* right: 70px; */
+        /* font-size: 35px; */
+        /* font-family: 'Mohave', sans-serif; */
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        /* border: 1px white solid; */
+    /* } */
+
+    /* .scorecard {
+        position: absolute;
+        right: 98px;
+        top: 374px;
+        font-size: 35px;
+        font-family: 'Mohave', sans-serif;
+        background-color: rgba(0, 0, 0, 0.1); */
+        /* border: 1px white solid; */
+    /* } */
+
+    /* #play { */
+        /* background-image: url(play.png); */
+        /* position: relative;
+        width: 70px;
+        height: 70px;
+        right: 690px;
+        top: 150px;
+        cursor: pointer;
+
+    }
+
+    #reset {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        right: 690px;
+        top: 150px;
+        cursor: pointer;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 1px; */
+        /* background-color: rgba(175, 41, 41, 0.4); */
+        /* width: 90%; */
+        /* text-align: center;
+        align-items: center;
+    }
+
+} */
