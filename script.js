@@ -107,8 +107,8 @@ function updateGame() {
     checkCollision(snakeX, snakeY)
   ) {
     clearInterval(gameInterval);
-    speed = 350;
-    swal("Game over! Your score is: " + score);//sweetalert
+    // alert();
+    swal("Game over! Your score is: " + score);
     return;
   }
 
